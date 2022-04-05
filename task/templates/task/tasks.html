@@ -1,9 +1,9 @@
-{% include 'task/task_list.html' %} {% block content %}
+{% include 'task/layout.html' %} {% block content %}
 <section class="task-list">
   <ul>
-    <li>Task 1</li>
-    <li>Task 2</li>
-    <li>Task 3</li>
+    {% for task in tasks %}
+    <li>{{ task }}</li>
+    {% endfor %}
   </ul>
 </section>
 
