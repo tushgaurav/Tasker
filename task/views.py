@@ -1,11 +1,12 @@
 from django.shortcuts import render
 
-# Create your views here.
+tasks_list = []
 
 
 def index(request):
     return render(request, "task/index.html")
 
 
-def tasks(request):
-    return render(request, "task/tasks.html")
+def view(request):
+    context = {"tasks": tasks_list}
+    return render(request, "task/tasks.html", context)
