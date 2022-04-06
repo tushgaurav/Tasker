@@ -1,12 +1,11 @@
-{% include 'task/layout.html' %} {% block content %}
-<section class="task-list">
-  <ul>
-    {% for task in tasks %}
-    <li>{{ task }}</li>
-    {% endfor %}
-  </ul>
-  <a href="{% url 'task:index' %}">Home</a>
-  <a href="{% url 'task:add' %}">Add More Tasks</a>
-</section>
+{% extends 'task/layout.html' %} {% block content %}
+
+<ul>
+  {% for task in tasks %}
+  <li>{{ task }}</li>
+  {% endfor %}
+</ul>
+<a href="{% url 'task:index' %}">Home</a>
+<a href="{% url 'task:add' %}">Add More Tasks</a>
 
 {% endblock %}
