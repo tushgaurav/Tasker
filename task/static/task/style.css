@@ -14,9 +14,9 @@ body {
 
 .container {
   width: 80%;
-  max-width: 50em;
+  max-width: 750px;
   margin: 0 auto;
-  padding: 2em;
+  padding: 2em 0;
 }
 
 .bottom-border {
