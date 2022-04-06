@@ -5,6 +5,8 @@
     <li>{{ task }}</li>
     {% endfor %}
   </ul>
+  <a href="{% url 'task:index' %}">Home</a>
+  <a href="{% url 'task:add' %}">Add More Tasks</a>
 </section>
 
 {% endblock %}
